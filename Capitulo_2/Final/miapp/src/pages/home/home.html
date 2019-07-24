@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding [ngClass]="{'low':lowBat}">
+  <ion-card>
+    <ion-card-header>
+      <ion-title>
+        Teléfono {{SO}}<br>
+        Versión {{version}}<br>
+        UUIID {{UUID}}
+      </ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <img src="assets/imgs/android.png" *ngIf="SO == 'Android'"/>
+          <img src="assets/imgs/ios.png" *ngIf="SO == 'iOS'"/>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mantener activo</ion-label>
+          <ion-toggle [(ngModel)]="siempreActivo" (ionChange)="cambioToggle()"></ion-toggle>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

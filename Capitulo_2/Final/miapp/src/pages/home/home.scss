@@ -1,0 +1,11 @@
+page-home {
+  ion-content{
+    &.low{
+      background-color: #aaa;
+
+      ion-card{
+        background-color: #eee;
+      }
+    }
+  }
+}

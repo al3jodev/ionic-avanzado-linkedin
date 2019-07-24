@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Trabajando con fotos</h2>
+  <button ion-button block (click)="getFromGallery()">Foto de galería</button>
+  <button ion-button block (click)="getFromCamera()">Foto de cámara</button>
+  <button ion-button block (click)="enviarFoto()">Enviar foto</button>
+  <button ion-button block (click)="grabarVideo()">Grabar vídeo</button>
+  <button ion-button block (click)="saveFile()">Guardar archivo</button>
+  <img src="{{contenidoFoto}}" />
+  <video width="200" height="300" controls [src]="videoURL"></video>
+</ion-content>

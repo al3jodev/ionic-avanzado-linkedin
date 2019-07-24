@@ -1,0 +1,8 @@
+{
+  "name": "miapp",
+  "app_id": "81803b80",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

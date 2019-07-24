@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add people
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup] = "persona" (ngSubmit)="sendData()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Nombre</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Edad</ion-label>
+        <ion-input type="number"  formControlName="age"></ion-input>
+      </ion-item>
+      <button ion-button block margin-vertical>Añadir</button>
+    </ion-list>
+  </form>
+</ion-content>
